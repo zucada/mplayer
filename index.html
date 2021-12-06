@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/solid.min.css" integrity="sha512-WTx8wN/JUnDrE4DodmdFBCsy3fTGbjs8aYW9VDbW8Irldl56eMj8qUvI3qoZZs9o3o8qFxfGcyQocUY0LYZqzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <h1 class="titulo">Music Player</h1>
+    <div class="video-container">
+        <video id="video" class="video" src="/videos/open your eyes.mp4"></video>
+    </div>
+    <div class="music-container">
+      
+        <img class="madoka" src="/images/madoka-removebg-preview.png" alt="">
+        <img class="girl" src="/images/mona-china.gif" alt="">
+        
+        <div class="music-info">
+            
+            <h4 id="title">Miss you</h4>
+            <!-- <p class="movie-info">movie: Stealing Beauty - 1996</p> -->
+            <div class="progress-container">
+                <div class="progress"></div>
+                <div class="sexo"></div>
+            </div>
+        </div>
+
+        <audio  src="" id="audio"></audio>
+        
+        
+        <div class="img-container">
+            <img src="" alt="music-cover" id="cover">
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn slider">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            <button id="volume" class="action-btn">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            
+            <div class="caca">
+            <input class="volumeslider" id="volumeslider" type="range" min="0" max="10" value="5" step="1">
+            </div>
+
+
+    
+        </div>
+
+
+    </div>
+
+    <footer>
+        
+        <p>by Mateus</p>
+    </footer>
+    
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</body>
+</html>
