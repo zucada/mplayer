@@ -10,7 +10,7 @@ const progressContainer = document.querySelector(".progress-container");
 const volBtn = document.querySelector("#volume")
 const volumeSlider = document.getElementById("volumeslider");
 const seekbar = document.querySelector('.seekbar')
-const bola = document.querySelector('.sexo')
+const bola = document.querySelector('.thumb')
 const musicInfo = document.querySelector('.music-info')
 const video = document.querySelector('#video')
 const videoContainer = document.querySelector('.video-container')
@@ -42,7 +42,7 @@ function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
   cover.src = `images/${song}.jpg`;
-  video.src = `videos_low/${song}.mp4`;
+  video.src = `videos/${song}.mp4`;
 
 }
 
@@ -189,6 +189,10 @@ function setvolume(){
 } else if (audio.volume == 0.1){
   unMuteSong()
 }}
+
+function replay(){
+  video.loop = true;
+}
 // Change song events 
 prevBtn.addEventListener('click', prevSong)
 nextBtn.addEventListener('click', nextSong)
@@ -199,6 +203,7 @@ progressContainer.addEventListener('click', setProgress)
 progressContainer.addEventListener('click', setVideo)
 
 
+video.addEventListener('ended', replay())
 
 audio.addEventListener('ended', nextSong)
 
