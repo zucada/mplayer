@@ -42,7 +42,7 @@ function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
   cover.src = `images/${song}.jpg`;
-  video.src = `videos/${song}.mp4`;
+  video.src = `videos_low/${song}.mp4`;
 
 }
 
